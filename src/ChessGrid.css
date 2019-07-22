@@ -11,5 +11,10 @@
 }
 
 .black {
-  background-color: black;
+  background-color: green;
+}
+
+.piece {
+  width: 64px;
+  height: 64px;
 }
