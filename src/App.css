@@ -1,15 +1,3 @@
-#container {
-    margin: 0 auto;
-    width: 640px;
-    height: 640px;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-}
-
-.white {
-  background-color: white;
-}
-
-.black {
-  background-color: black;
+.Title {
+  font-size: 100px;
 }

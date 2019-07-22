@@ -1,84 +1,24 @@
-import React from 'react';
+import React,{Component} from 'react';
+import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <section id="container">
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.setState={
 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-      </section>
-    </div>
-  );
+    }
+  }
+  render() {
+    return (
+      <React.Fragment>
+        <div className='App'>
+          <h1 className='Title'>Chess!!</h1>
+        </div>
+      </React.Fragment>
+    )
+  }
 }
+
 
 export default App;
