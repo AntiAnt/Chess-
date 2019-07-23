@@ -1,102 +1,105 @@
 import React,{Component} from 'react';
 import './ChessGrid.css';
-
+import {Piece} from './piece.js'
 import white_pawn from './white-pawn.png'
 
 export class ChessGrid extends Component {
   constructor(props) {
     super(props);
-    this.state={
-      show_image: false
-    };
-  }
-
-  onClick() {
-    this.setState({ show_image: !this.state.show_image} );
+    
   }
  
   render() {
     return (
-      <>
+      <div className='App'>
+        <div className='Board-row'>
+          <button className='square'><img src={white_pawn} rel='peice' height='75' width='75'/></button>
+          <button className='square'></button>
+          <button className='square'>Data</button>
+          <button className='square'>Picard</button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+        </div>
 
-      <button onClick={()=>this.onClick()}>Show Image</button>
-      <section id="container">
-        <div className="black">
-        </div> 
-        <div className="white">
-          {this.state.show_image && (<div><img width="64px" height="64px" className="piece" src={white_pawn} alt="piece"></img></div>)}
-        </div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
+        <div className='Board-row'>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+        </div>
 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
+        <div className='Board-row'>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+        </div>
 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
+        <div className='Board-row'>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+        </div>
 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
+        <div className='Board-row'>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+        </div>
 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
+        <div className='Board-row'>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+          <button className='square'></button>
+        </div>
 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
+        <div className='Board-row'>
+          <button className='square'><Piece piece='whitePawn' /></button>
+          <button className='square'><Piece piece='whitePawn' /></button>
+          <button className='square'><Piece piece='whitePawn' /></button>
+          <button className='square'><Piece piece='whitePawn' /></button>
+          <button className='square'><Piece piece='whitePawn' /></button>
+          <button className='square'><Piece piece='whitePawn' /></button>
+          <button className='square'><Piece piece='whitePawn' /></button>
+          <button className='square'><Piece piece='whitePawn' /></button>
+        </div>
 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-        <div className="white"></div> 
-        <div className="black"></div> 
-      </section>
-      </>
+        <div className='Board-row'>
+          <button className='square'><Piece piece='whiteRook' /></button>
+          <button className='square'><Piece piece='whiteKnight' /></button>
+          <button className='square'><Piece piece='whiteBishop' /></button>
+          <button className='square'><Piece piece='whiteQueen' /></button>
+          <button className='square'><Piece piece='whiteKing' /></button>
+          <button className='square'><Piece piece='whiteBishop' /></button>
+          <button className='square'><Piece piece='whiteKnight' /></button>
+          <button className='square'><Piece piece='whiteRook' /></button>
+        </div>
+      </div>
     );
   }
 }
